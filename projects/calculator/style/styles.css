@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: black; /* Keep background solid black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Added for positioning */
+}
+
+.background {
+    position: absolute; /* Position canvas behind other elements */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it stays behind the calculator */
+}
+
+.calculator {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background */
+    border-radius: 15px; /* More rounded corners */
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5); /* Neon glow effect */
+    text-align: center;
+}
+
+/* Other styles remain unchanged */
+
+.display {
+    background-color: #222; /* Darker display */
+    border: 1px solid #00ffff; /* Neon border */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 90%;
+    height: 60px;
+    font-size: 36px;
+    padding: 5px;
+    text-align: right;
+    border: none;
+    background-color: #222; /* Darker input */
+    color: #00ffff; /* Neon text color */
+    border-radius: 5px;
+    outline: none;
+    display: block;
+    text-shadow: 0 0 5px #00ffff; /* Neon text glow */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    font-size: 24px;
+    background-color: #333; /* Darker button */
+    color: #fff;
+    border: 1px solid #00ffff; /* Neon border */
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s; /* Added box-shadow transition */
+}
+
+button:hover {
+    background-color: #444; /* Slightly lighter on hover */
+    box-shadow: 0 0 15px #00ffff; /* Neon glow on hover */
+}
+
+
+.home-button {
+    background-color: rgba(0, 255, 255, 0.8); /* Aqua color */
+    color: black; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Space above the button */
+    width: 100%; /* Full width to match calculator buttons */
+    font-size: 18px; /* Font size */
+}
+
+.home-button:hover {
+    background-color: rgba(0, 255, 255, 1); /* Darker on hover */
+}

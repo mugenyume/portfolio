@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace; /* Use Roboto Mono font */
+    line-height: 1.6;
+    background: black; /* Set background to black */
+    color: #fff;
+    margin: 0; /* Ensure no default margin */
+    padding: 0; /* Ensure no default padding */
+}
+
+.background {
+    position: fixed; /* Use fixed positioning to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it stays behind the header and main content */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.9); /* Darker header for contrast */
+    color: #00ffcc;
+    padding: 0.2rem 2rem; /* Reduced padding for a smaller header */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 20px 20px; /* Rounded corners */
+    transition: top 0.3s; /* Smooth transition for hiding */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack title and nav vertically */
+    align-items: center; /* Center content horizontally */
+    height: 90px; /* Set a fixed height for the header */
+}
+
+.header-title {
+    margin: 0; /* Remove default margin */
+}
+
+
+h1.main-title {
+    font-size: 1.5rem; /* Adjust font size for the title */
+    margin: 10px 0; /* Add margin to create space above and below */
+    text-transform: uppercase; /* Make text uppercase */
+}
+
+nav {
+    margin-top: 5px; /* Space between title and navigation */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center navigation */
+}
+
+nav ul li {
+    margin: 0 1.5rem; /* Increased margin for spacing */
+}
+
+nav ul li a {
+    color: #00ffcc;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    font-size: 1.2rem; /* Increased font size for links */
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+    transform: scale(1.1);
+}
+
+/* Main content styling */
+main {
+    max-width: 1200px; /* Increased max-width for better layout */
+    margin: 100px auto; /* Centered with top margin for header */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center text in main */
+}
+
+
+.image-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the image */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Add transition for animation */
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Article styling */
+article {
+    background-color: rgba(8, 8, 8, 0); /* Slightly more opaque */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    text-align: center; /* Center text in articles */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background and scaling */
+}
+
+article:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Change background to black on hover */
+    color: rgb(230, 207, 0); /* Change text color to white for better contrast */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center; /* Center text in footer */
+    padding: 1rem; /* Increased padding */
+    position: relative; /* Changed to relative */
+    margin-top: 20px; /* Space above footer */
+    width: 100%; /* Ensure footer takes full width */
+}
+
